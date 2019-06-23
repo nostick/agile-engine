@@ -14,10 +14,11 @@ let elements = htmlService.findById(args.original, args.targetId)
 
 if(elements){
     let queries = htmlService.buildQueries(elements)
-
+    let stop = false
     queries.forEach( query => {
         let result = htmlService.cssQuerySelector(args.diff, query) 
-        if(result){
+        if(result && !stop){
+            stop = true
             console.log(htmlService.parsePath(result.response))
         }
     })

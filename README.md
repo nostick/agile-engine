@@ -24,44 +24,26 @@ Case 4: node index.js sample-0-origin.html sample-4-the-mash.html
 ### Case 1:
 ``` 
 $ node index.js sample-0-origin.html sample-1-evil-gemini.html        
-HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > 
-DIV class="panel panel-default" > DIV class="panel-body" > A class="btn btn-danger"
-
-HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > 
-DIV class="panel panel-default" > DIV class="panel-body" > A class="btn btn-danger"
-
-It returns 2 values because that matched with more than one criteria of search
+HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > DIV class="panel panel-default" > DIV class="panel-body" > A class="btn btn-success"
 ```
 
 ### Case 2:
 ```
 $ node index.js sample-0-origin.html sample-2-container-and-clone.html
-HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > 
-DIV class="panel panel-default" > DIV class="panel-body" > 
-DIV class="some-container" > A class="btn test-link-ok"
+HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > DIV class="panel panel-default" > DIV class="panel-body" > DIV class="some-container" > A class="btn test-link-ok"
 
-HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > 
-DIV class="panel panel-default" > DIV class="panel-body" > 
-DIV class="some-container" > A class="btn test-link-ok"
 ```
 
 ### Case 3:
 ```
-$ node index.js sample-0-origin.html sample-3-the-escape.html
-HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > 
-DIV class="panel panel-default" > DIV class="panel-body" > A class="btn btn-warning"
+$ node index.js sample-0-origin.html sample-3-the-escape.html         
+HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > DIV class="panel panel-default" > DIV class="panel-footer" > A class="btn btn-success"
 ```
 
 ### Case 4:
 ```
 $ node index.js sample-0-origin.html sample-4-the-mash.html
-HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > 
-DIV class="panel panel-default" > DIV class="panel-footer" > 
-A class="btn btn-success"
-
-HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > 
-DIV class="panel panel-default" > DIV class="panel-footer" > 
-A class="btn btn-success"
+HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > DIV class="panel panel-default" > DIV class="panel-footer" > A class="btn btn-success"
 ```
 
 ## Contributing

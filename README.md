@@ -46,7 +46,7 @@ $ node index.js sample-0-origin.html sample-4-the-mash.html
 HTML > BODY > DIV > DIV > DIV class="row" > DIV class="col-lg-8" > DIV class="panel panel-default" > DIV class="panel-footer" > A class="btn btn-success"
 ```
 
-## Contributing
+## Notes 1
 The app file is de binary executable, it also needs params just like on node, so an example would be like this:
 
 ```
@@ -54,3 +54,10 @@ $./app sample-0-origin.html sample-1-evil-gemini.html
 ```
 
 it shouldn't require any type of build, should wokr just like it is.
+
+## Notes 2
+There is a third param you may add if you want but it isn't required for app to run, but
+if exist the programa will try to work with that id to search for the item on original file
+
+
+
